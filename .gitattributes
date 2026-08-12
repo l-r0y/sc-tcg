@@ -1,0 +1,10 @@
+# Auto-detect text files and normalize line endings to LF
+* text=auto
+
+# Enforce LF for files that must use Unix line endings
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.md   text eol=lf
+*.rb   text eol=lf
+*.scss text eol=lf
+*.sh   text eol=lf

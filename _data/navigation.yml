@@ -1,0 +1,11 @@
+# Navigation menu for the header
+main:
+  - title: "Home"
+    url: "/"
+    permalink: /
+  - title: "About"
+    url: "/about/"
+  - title: "Blog"
+    url: "/posts/"
+  - title: "GitHub"
+    url: "https://github.com/l-r0y/sc-tcg"

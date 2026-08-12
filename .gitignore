@@ -1,0 +1,21 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+Gemfile.lock
+*.gem
+.bundle/
+vendor/
+
+# Node
+node_modules/
+
+# OS / IDE
+.DS_Store
+*.swp
+Thumbs.db
+.vscode/
+.idea/

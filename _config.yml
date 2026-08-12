@@ -1,0 +1,46 @@
+# sc-tcg - Jekyll Configuration for GitHub Pages
+# https://jekyllrb.com/docs/configuration/options
+
+title: "sc-tcg"
+email: "contact@sc-tcg.example"
+description: "Documentation for the sc-tcg project."
+baseurl: "/sc-tcg"
+url: "https://l-r0y.github.io"
+
+# Build settings
+theme: minimal-mistakes
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+sass:
+  style: compressed
+
+# Plugins (managed via github-pages gem for GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+
+# Navigation data
+navigation_sort:
+  - home
+  - about
+  - posts

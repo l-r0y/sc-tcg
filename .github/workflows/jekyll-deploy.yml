@@ -1,0 +1,38 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+# Triggers the workflow on push to 'main' branch.
+# Adapt 'branches' to match your default branch name if needed.
+on:
+  push:
+    branches: [main]
+
+# Sets the maximum number of concurrent deployments to 1.
+concurrency:
+  group: jekyll-deploy
+  cancel-in-progress: false
+
+# IMPORTANT: only deploy when running on the default branch
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Set up Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build
+        id: build
+        uses: actions/jekyll-build@v1
+        with:
+          enable_bundle: true
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+      - name: Deploy to GitHub Pages (beta)
+        id: deployment
+        uses: actions/deploy-pages@v4
