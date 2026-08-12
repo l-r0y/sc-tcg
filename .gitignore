@@ -9,6 +9,7 @@ Gemfile.lock
 *.gem
 .bundle/
 vendor/
+bin/
 
 # Node
 node_modules/

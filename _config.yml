@@ -8,14 +8,14 @@ baseurl: "/sc-tcg"
 url: "https://l-r0y.github.io"
 
 # Build settings
-theme: minimal-mistakes
+theme: minimal-mistakes-jekyll
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
 sass:
   style: compressed
 
-# Plugins (managed via github-pages gem for GitHub Pages)
+# Plugins (loaded from :jekyll_plugins group in Gemfile)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -38,6 +38,18 @@ defaults:
       type: portfolio
     values:
       layout: single
+
+# Exclude from build
+exclude:
+  - "bin"
+  - "build.log"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "vendor"
+  - ".bundle"
+  - "rubyinstaller-devkit.exe"
+  - "ruby_names.txt"
+  - "ruby_url_tmp.txt"
 
 # Navigation data
 navigation_sort:
