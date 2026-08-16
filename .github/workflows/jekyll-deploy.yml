@@ -1,4 +1,4 @@
-﻿name: Build and deploy Jekyll site to GitHub Pages
+name: Build and deploy Jekyll site to GitHub Pages
 
 # Triggers the workflow on push to 'main' branch.
 # Adapt 'branches' to match your default branch name if needed.
@@ -10,6 +10,16 @@ on:
 concurrency:
   group: jekyll-deploy
   cancel-in-progress: false
+
+# Required permissions for actions/configure-pages and actions/deploy-pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+environment:
+  name: github-pages
+  url: ${{ steps.deployment.outputs.page_url }}
 
 # Deploy a Jekyll site to GitHub Pages
 jobs:
@@ -37,4 +47,3 @@ jobs:
       - name: Deploy to GitHub Pages (beta)
         id: deployment
         uses: actions/deploy-pages@v4
-
