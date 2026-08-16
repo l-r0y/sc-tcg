@@ -2,6 +2,8 @@
 
 Documentation for the **sc-tcg** project — a static site built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
+**Deployed site:** [https://l-r0y.github.io/sc-tcg/](https://l-r0y.github.io/sc-tcg/)
+
 ## Table of contents
 
 - [Getting started](#getting-started)
@@ -52,3 +54,7 @@ sc-tcg/
 ├── LICENSE
 └── README.md
 ```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
