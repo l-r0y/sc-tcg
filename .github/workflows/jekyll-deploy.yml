@@ -34,11 +34,10 @@ jobs:
       - name: Set up Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Build
-        id: build
-        uses: actions/jekyll-build@v1
-        with:
-          enable_bundle: true
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
