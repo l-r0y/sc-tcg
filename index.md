@@ -18,6 +18,8 @@ Welcome to the **sc-tcg** documentation site. This site is built with [Jekyll](h
 sc-tcg/
 ├── _config.yml          # Jekyll configuration
 ├── Gemfile              # Ruby gem dependencies
+├── about/               # About page (about/index.md)
+├── docs/                # Documentation pages (wiki-style, with sidebar navigation)
 ├── _layouts/            # Custom layouts (optional)
 ├── _includes/           # Reusable HTML snippets (optional)
 ├── _sass/               # Sass partials

@@ -7,5 +7,32 @@ main:
     url: "/about/"
   - title: "Blog"
     url: "/posts/"
+  - title: "Documentation"
+    url: "/docs/"
   - title: "GitHub"
     url: "https://github.com/l-r0y/sc-tcg"
+
+# ---------------------------------------------------------------------------
+# Sidebar navigation for the documentation (wiki) section.
+# Each key below is referenced from a page's `sidebar` front matter and is
+# rendered by the theme's nav_list include, which highlights the active page.
+# URLs are site-relative (the /sc-tcg baseurl is added automatically).
+# ---------------------------------------------------------------------------
+docs-overview:
+  - title: "About the Game"
+    url: "/docs/overview/about-the-game.html"
+  - title: "History & Influences"
+    url: "/docs/overview/history.html"
+
+docs-rules:
+  - title: "Core Rules"
+    url: "/docs/rules/core-rules.html"
+  - title: "Card Types"
+    url: "/docs/rules/card-types.html"
+
+docs-design:
+  - title: "Design Principles"
+    url: "/docs/design/design-principles.html"
+  - title: "Card Anatomy"
+    url: "/docs/design/card-anatomy.html"
+
